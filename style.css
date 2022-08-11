@@ -4,7 +4,6 @@ body {
 }
 header {
   display: flex;
-  flex-direction: row-reverse;
   justify-content: center;
   width: 1600px;
   height: 80px;
@@ -12,7 +11,6 @@ header {
   background: #ffffff;
 }
 .logo {
-  display: flex;
   position: absolute;
   height: 31px;
   width: 145px;
@@ -21,22 +19,27 @@ header {
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
+  letter-spacing: 0.03em;
+  color: #2196f3;
 }
-.navigation {
-  display: flex;
-  position: absolute;
+
+#navlist li {
+  display: inline;
+  list-style-type: none;
+  padding-right: 20px;
   width: 272px;
   height: 16px;
-  left: 453px;
+  left: 468px;
   top: 32px;
 }
-.contact-header {
-  display: flex;
-  position: absolute;
+#navlist-contact-header li {
+  display: inline;
+  list-style-type: none;
   width: 135px;
   height: 16px;
   left: 1078px;
   top: 32px;
+  padding-right: 50px;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -46,16 +49,52 @@ header {
 }
 h1 {
   position: absolute;
+  width: 1600px;
+  height: 600px;
+  left: 0px;
+  top: 80px;
+  background: #2f303a;
+}
+.title-section {
+  position: absolute;
   width: 696px;
   height: 120px;
-  left: 452px;
-  top: 280px;
-  font-weight: 900;
+  font-weight: 900px;
   font-size: 44px;
   line-height: 60px;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+}
+.about {
+  background: #ffffff;
+  position: absolute;
+  width: 1600px;
+  height: 101px;
+  left: 215px;
+  top: 774px;
+}
+.offer {
+  position: absolute;
+  width: 1600px;
+  height: 386px;
+  left: 215px;
+  top: 969px;
+}
+.realizations {
+  position: absolute;
+  width: 1600px;
+  height: 648px;
+  left: 0px;
+  top: 1449px;
+  background-color: ##f5f4fa;
+}
+footer {
+  position: absolute;
+  width: 1600px;
+  height: 252px;
+  left: 0px;
+  top: 2097px;
   background-color: #2f303a;
 }
