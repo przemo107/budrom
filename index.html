@@ -4,214 +4,496 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Szablon</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Studio</title>
+    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
     />
   </head>
   <body>
-    <header>
-      <a class="logo" href="https://budrom.net">BUDROM</a>
-      <nav id="navcontainer">
-        <ul id="navlist">
-          <li id="active"><a href="navlist" id="current"></a></li>
-          <li><a href="#about">O firmie</a></li>
-          <li><a href="#offer">Oferta</a></li>
-          <li><a href="#realizations">Realizacje</a></li>
-          <li><a href="#contact">Kontakt</a></li>
-        </ul>
-      </nav>
-      <ul id="navlist-contact-header">
-        <li id="active"><a href="navlist-contact-header" id="current"></a></li>
-        <li><a href="mailto:budrom@vp.pl">budrom@vp.pl</a></li>
-        <li><a href="tel:+48111111111">+48 111 111 111</a></li>
-      </ul>
-    </header>
-
-    <main>
-      <h1>PRZEDSIĘBIORSTWO BUDOWLANE BUDROM</h1>
-      <h2 id="about">O firmie</h2>
-      <section class="about-us">
-        <p>
-          <strong>Przedsiębiorstwo Budowlane „BUDROM”</strong>działa na rynku od
-          1983r. Posiadamy wyspecjalizowane brygady z wieloletnim stażem.
-          Wykwalifikowani pracownicy bardzo dobrze znają swój fach oraz z
-          zaangażowaniem podejmują stawiane przed nimi zadania. Oprócz
-          <strong>doświadczenia</strong> posiadamy dużą wiedzę i praktykę.
-          Właściciel firmy Paweł Siwecki ..... Nasi klienci to zarówno osoby
-          prywatne, Wspólnoty Mieszkaniowe, Zarządcy Nieruchomości, Spółdzielnie
-          Mieszkaniowe jak również liczne Przedsiębiorstwa, Korporacje, które
-          znają naszą fachowość, solidność i zorganizowanie.
-        </p>
-      </section>
-
-      <div class="offer">
-        <h2 id="offer">Wykonujemy inwestycje w branży:</h2>
-        <ul>
+    <div class="wrapper">
+      <header class="header container">
+        <a href="./index.html"
+          ><img
+            src="./images/logo.png"
+            alt="logo"
+            style="width: 300px; height: 70px"
+        /></a>
+        <nav>
+          <ul class="nav-links">
+            <li>
+              <a class="active-link" href="./index.html">Główna</a>
+            </li>
+            <li>
+              <a class="link" href="./oferta.html">Oferta</a>
+            </li>
+            <li>
+              <a class="link" href="./realizacje.html">Realizacje</a>
+            </li>
+            <li>
+              <a class="link" href="https://devstudio.com/kontakt">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="contact-info">
           <li>
-            <figure>
-              <img
-                src="./images/work-image-2.jpg"
-                alt="photo of builder"
-                width="200"
-                height="150"
-              />
-              <figcaption>izolacji termicznych</figcaption>
-            </figure>
+            <a class="link-info header-icons" href="mailto:info@devstudio.com">
+              <svg class="header-icons-spacing" width="16" height="12">
+                <use xlink:href="./images/icons.svg#envelope"></use>
+              </svg>
+              info@budrom.pl
+            </a>
           </li>
           <li>
-            <figure>
-              <img
-                src="./images/work-image-2.jpg"
-                alt="photo of builder"
-                width="200"
-                height="150"
-              />
-              <figcaption>izolacji termicznych</figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img
-                src="./images/work-image-2.jpg"
-                alt="photo of builder"
-                width="200"
-                height="150"
-              />
-              <figcaption>izolacji przeciwwilgociowych</figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img
-                src="./images/work-image-2.jpg"
-                alt="photo of builder"
-                width="200"
-                height="150"
-              />
-              <figcaption>dekarskiej i dekarsko-blacharskiej</figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img
-                src="./images/work-image-2.jpg"
-                alt="photo of builder"
-                width="200"
-                height="150"
-              />
-              <figcaption>instalacji sanitarnych</figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img
-                src="./images/work-image-2.jpg"
-                alt="photo of builder"
-                width="200"
-                height="150"
-              />
-              <figcaption>instalacji gazowej</figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img
-                src="./images/work-image-2.jpg"
-                alt="photo of builder"
-                width="200"
-                height="150"
-              />
-              <figcaption>instalacji elektrycznej</figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img
-                src="./images/work-image-2.jpg"
-                alt="photo of builder"
-                width="200"
-                height="150"
-              />
-              <figcaption>stolarki</figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img
-                src="./images/work-image-2.jpg"
-                alt="photo of builder"
-                width="200"
-                height="150"
-              />
-              <figcaption>aluminiowej i tworzywa sztucznego</figcaption>
-            </figure>
+            <a class="link-info header-icons" href="tel:+48111111111">
+              <svg class="header-icons-spacing" width="10" height="16">
+                <use xlink:href="./images/icons.svg#smartphone"></use>
+              </svg>
+              +48 111 111 111
+            </a>
           </li>
         </ul>
-      </div>
-      <div class="realizations">
-        <h2 id="realizations">Realizacje</h2>
-        <ul>
-          <li>
-            <figure>
-              <img
-                src="./images/team-1.jpg"
-                alt="John Doe"
-                width="150"
-                height="150"
-              />
-              <figcaption>John Doe Product Designer</figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img
-                src="./images/team-2.jpg"
-                alt="John Doe"
-                width="150"
-                height="150"
-              />
-              <figcaption>John Doe Frontend Developer</figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img
-                src="./images/team-3.jpg"
-                alt="John Doe"
-                width="150"
-                height="150"
-              />
-              <figcaption>John Doe Marketing</figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img
-                src="./images/team-4.jpg"
-                alt="John Doe"
-                width="150"
-                height="150"
-              />
-              <figcaption>John Doe UI Designer</figcaption>
-            </figure>
-          </li>
-        </ul>
-      </div>
-    </main>
-    <footer>
-      <a href="https://budrom.net">BUDROM</a>
-      <address>
-        ul. Gen. St. Maczka 16/8<br />
-        -60-651 Poznań<br />
-        NIP
-        <a href="mailto:budrom@vp.pl">budrom@vp.pl</a><br />
-        <a href="tel:+48111111111">+48 111 111 111</a>
-      </address>
-    </footer>
+      </header>
+      <main>
+        <section>
+          <div class="container main-header">
+            <h1 class="main-header-text">BUDROM</h1>
+            <button type="button" class="btn">Zamów usługę</button>
+          </div>
+        </section>
+        <section class="section no-padding">
+          <div class="container">
+            <ul class="skills">
+              <li>
+                <svg class="our-feature-icon">
+                  <use xlink:href="./images/icons.svg#antenna-1"></use>
+                </svg>
+                <h3 class="about-header">LOREM IPSUM</h3>
+                <p class="about-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  vel arcu sem. Sed non sodales dui. Interdum et malesuada
+                </p>
+              </li>
+              <li>
+                <svg class="our-feature-icon">
+                  <use xlink:href="./images/icons.svg#clock-2"></use>
+                </svg>
+                <h3 class="about-header">LOREM IPSUM</h3>
+                <p class="about-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  vel arcu sem. Sed non sodales dui. Interdum et malesuada
+                </p>
+              </li>
+              <li>
+                <svg class="our-feature-icon">
+                  <use xlink:href="./images/icons.svg#diagram-3"></use>
+                </svg>
+                <h3 class="about-header">LOREM IPSUM</h3>
+                <p class="about-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  vel arcu sem. Sed non sodales dui. Interdum et malesuada
+                </p>
+              </li>
+              <li>
+                <svg class="our-feature-icon">
+                  <use xlink:href="./images/icons.svg#astronaut-4"></use>
+                </svg>
+                <h3 class="about-header">LOREM IPSUM</h3>
+                <p class="about-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  vel arcu sem. Sed non sodales dui. Interdum et malesuada
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="section about no-padding">
+          <div class="container">
+            <h2 class="secondary-header-about">Czym się zajmujemy</h2>
+            <ul class="about-list">
+              <li>
+                <img
+                  src="./images/work-image-1.jpg"
+                  alt="Wokplace space"
+                  width="370"
+                  height="294"
+                />
+              </li>
+              <li>
+                <img
+                  src="./images/work-image-2.jpg"
+                  alt="Workplace with computer"
+                  width="370"
+                  height="294"
+                />
+              </li>
+              <li>
+                <img
+                  src="./images/work-image-3.jpg"
+                  alt="Workplace with tablet"
+                  width="370"
+                  height="294"
+                />
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="section no-padding team-background">
+          <div class="container">
+            <h2 class="secondary-header-team">Nasz zespół</h2>
+            <ul class="team">
+              <li class="img-decoration">
+                <img
+                  src="./images/team-1.jpg"
+                  alt="John Doe"
+                  width="270"
+                  height="260"
+                />
+                <h3 class="team-name">John Doe</h3>
+                <p class="team-workplace">Product Designer</p>
+                <div class="our-team-social-icons">
+                  <svg class="our-team-social-icon">
+                    <use
+                      xlink:href="./images/icons.svg#instagram"
+                      width="20"
+                      height="20"
+                      x="12"
+                      y="12"
+                    ></use>
+                  </svg>
+                  <svg class="our-team-social-icon">
+                    <use
+                      xlink:href="./images/icons.svg#twitter"
+                      width="20"
+                      height="20"
+                      x="12"
+                      y="12"
+                    ></use>
+                  </svg>
+                  <svg class="our-team-social-icon">
+                    <use
+                      xlink:href="./images/icons.svg#facebook"
+                      width="20"
+                      height="20"
+                      x="12"
+                      y="12"
+                    ></use>
+                  </svg>
+                  <svg class="our-team-social-icon">
+                    <use
+                      xlink:href="./images/icons.svg#linkedin"
+                      width="20"
+                      height="20"
+                      x="12"
+                      y="12"
+                    ></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="img-decoration">
+                <img
+                  src="./images/team-2.jpg"
+                  alt="John Doe"
+                  width="270"
+                  height="260"
+                />
+                <h3 class="team-name">John Doe</h3>
+                <p class="team-workplace">Frontend Developer</p>
+                <div class="our-team-social-icons">
+                  <svg class="our-team-social-icon">
+                    <use
+                      xlink:href="./images/icons.svg#instagram"
+                      width="20"
+                      height="20"
+                      x="12"
+                      y="12"
+                    ></use>
+                  </svg>
+                  <svg class="our-team-social-icon">
+                    <use
+                      xlink:href="./images/icons.svg#twitter"
+                      width="20"
+                      height="20"
+                      x="12"
+                      y="12"
+                    ></use>
+                  </svg>
+                  <svg class="our-team-social-icon">
+                    <use
+                      xlink:href="./images/icons.svg#facebook"
+                      width="20"
+                      height="20"
+                      x="12"
+                      y="12"
+                    ></use>
+                  </svg>
+                  <svg class="our-team-social-icon">
+                    <use
+                      xlink:href="./images/icons.svg#linkedin"
+                      width="20"
+                      height="20"
+                      x="12"
+                      y="12"
+                    ></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="img-decoration">
+                <img
+                  src="./images/team-3.jpg"
+                  alt="John Doe"
+                  width="270"
+                  height="260"
+                />
+                <h3 class="team-name">John Doe</h3>
+                <p class="team-workplace">Marketing</p>
+                <div class="our-team-social-icons">
+                  <svg class="our-team-social-icon">
+                    <use
+                      xlink:href="./images/icons.svg#instagram"
+                      width="20"
+                      height="20"
+                      x="12"
+                      y="12"
+                    ></use>
+                  </svg>
+                  <svg class="our-team-social-icon">
+                    <use
+                      xlink:href="./images/icons.svg#twitter"
+                      width="20"
+                      height="20"
+                      x="12"
+                      y="12"
+                    ></use>
+                  </svg>
+                  <svg class="our-team-social-icon">
+                    <use
+                      xlink:href="./images/icons.svg#facebook"
+                      width="20"
+                      height="20"
+                      x="12"
+                      y="12"
+                    ></use>
+                  </svg>
+                  <svg class="our-team-social-icon">
+                    <use
+                      xlink:href="./images/icons.svg#linkedin"
+                      width="20"
+                      height="20"
+                      x="12"
+                      y="12"
+                    ></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="img-decoration">
+                <img
+                  src="./images/team-4.jpg"
+                  alt="John Doe"
+                  width="270"
+                  height="260"
+                />
+                <h3 class="team-name">John Doe</h3>
+                <p class="team-workplace">UI Designer</p>
+                <div class="our-team-social-icons">
+                  <svg class="our-team-social-icon">
+                    <use
+                      xlink:href="./images/icons.svg#instagram"
+                      width="20"
+                      height="20"
+                      x="12"
+                      y="12"
+                    ></use>
+                  </svg>
+                  <svg class="our-team-social-icon">
+                    <use
+                      xlink:href="./images/icons.svg#twitter"
+                      width="20"
+                      height="20"
+                      x="12"
+                      y="12"
+                    ></use>
+                  </svg>
+                  <svg class="our-team-social-icon">
+                    <use
+                      xlink:href="./images/icons.svg#facebook"
+                      width="20"
+                      height="20"
+                      x="12"
+                      y="12"
+                    ></use>
+                  </svg>
+                  <svg class="our-team-social-icon">
+                    <use
+                      xlink:href="./images/icons.svg#linkedin"
+                      width="20"
+                      height="20"
+                      x="12"
+                      y="12"
+                    ></use>
+                  </svg>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="section">
+          <div class="container">
+            <h2 class="secondary-header-team">Nasi klienci</h2>
+            <div class="our-clients-icons">
+              <div class="our-clients-icon">
+                <svg>
+                  <use
+                    xlink:href="./images/icons.svg#company-6"
+                    width="106"
+                    height="60.04"
+                    x="35"
+                    y="45"
+                  ></use>
+                </svg>
+              </div>
+              <div class="our-clients-icon">
+                <svg>
+                  <use
+                    xlink:href="./images/icons.svg#company-1"
+                    width="106"
+                    height="60.04"
+                    x="35"
+                    y="45"
+                  ></use>
+                </svg>
+              </div>
+              <div class="our-clients-icon">
+                <svg>
+                  <use
+                    xlink:href="./images/icons.svg#company-2"
+                    width="106"
+                    height="60.04"
+                    x="35"
+                    y="45"
+                  ></use>
+                </svg>
+              </div>
+              <div class="our-clients-icon">
+                <svg>
+                  <use
+                    xlink:href="./images/icons.svg#company-3"
+                    width="106"
+                    height="60.04"
+                    x="35"
+                    y="45"
+                  ></use>
+                </svg>
+              </div>
+              <div class="our-clients-icon">
+                <svg>
+                  <use
+                    xlink:href="./images/icons.svg#company-4"
+                    width="106"
+                    height="60.04"
+                    x="35"
+                    y="45"
+                  ></use>
+                </svg>
+              </div>
+              <div class="our-clients-icon">
+                <svg>
+                  <use
+                    xlink:href="./images/icons.svg#company-5"
+                    width="106"
+                    height="60.04"
+                    x="35"
+                    y="45"
+                  ></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container footer-container">
+          <div class="footer-info">
+            <a href="./index.html"
+              ><img
+                src="./images/logo.png"
+                alt="logo"
+                style="width: 300px; height: 70px"
+            /></a>
+            <address class="contact-footer">
+              Poznań, ul. gen. Stanisława Maczka 16/8
+            </address>
+            <ul class="link-list-footer">
+              <li>
+                <a class="link-info-footer" href="mailto:infor@example.com"
+                  >info@budrom.pl</a
+                >
+              </li>
+              <li>
+                <a class="link-info-footer" href="tel:+48111111111"
+                  >+48 111 111 111</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="join-us-header">Dołącz do nas</h4>
+            <ul class="footer-social-media-icons">
+              <li>
+                <svg class="footer-social-media-icon">
+                  <use
+                    xlink:href="./images/icons.svg#instagram-footer"
+                    width="20"
+                    height="20"
+                    x="12"
+                    y="12"
+                  ></use>
+                </svg>
+              </li>
+              <li>
+                <svg class="footer-social-media-icon">
+                  <use
+                    xlink:href="./images/icons.svg#twitter-footer"
+                    width="20"
+                    height="20"
+                    x="12"
+                    y="12"
+                  ></use>
+                </svg>
+              </li>
+              <li>
+                <svg class="footer-social-media-icon">
+                  <use
+                    xlink:href="./images/icons.svg#facebook-footer"
+                    width="20"
+                    height="20"
+                    x="12"
+                    y="12"
+                  ></use>
+                </svg>
+              </li>
+              <li>
+                <svg class="footer-social-media-icon">
+                  <use
+                    xlink:href="./images/icons.svg#linkedin-footer"
+                    width="20"
+                    height="20"
+                    x="12"
+                    y="12"
+                  ></use>
+                </svg>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header container">
+        <a href="./index.html"
+          ><img
+            src="./images/logo.png"
+            alt="logo"
+            style="width: 300px; height: 70px"
+        /></a>
+        <nav>
+          <ul class="nav-links">
+            <li>
+              <a class="link" href="./index.html">Główna</a>
+            </li>
+            <li>
+              <a class="active-link" href="./oferta.html">Oferta</a>
+            </li>
+            <li>
+              <a class="link" href="./realizacje.html">Realizacje</a>
+            </li>
+            <li>
+              <a class="link" href="https://devstudio.com/kontakt">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="contact-info">
+          <li>
+            <a class="link-info header-icons" href="mailto:info@devstudio.com">
+              <svg class="header-icons-spacing" width="16" height="12">
+                <use xlink:href="./images/icons.svg#envelope"></use>
+              </svg>
+              info@budrom.pl
+            </a>
+          </li>
+          <li>
+            <a class="link-info header-icons" href="tel:+48111111111">
+              <svg class="header-icons-spacing" width="10" height="16">
+                <use xlink:href="./images/icons.svg#smartphone"></use>
+              </svg>
+              +48 111 111 111
+            </a>
+          </li>
+        </ul>
+      </header>
+      <main class="main-background container">
+        <ul class="button-list">
+          <li><button type="button" class="btn-filter">Wszystkie</button></li>
+          <li><button type="button" class="btn-filter">Strony</button></li>
+          <li><button type="button" class="btn-filter">Aplikacje</button></li>
+          <li><button type="button" class="btn-filter">Dizajn</button></li>
+          <li><button type="button" class="btn-filter">Marketing</button></li>
+        </ul>
+        <div>
+          <ul class="project-list">
+            <li class="project-card">
+              <img
+                src="images/project-1.jpg"
+                alt="laptop with project of web page"
+                width="370"
+                height="294"
+              />
+              <h5 class="project-title">Technocrack</h5>
+              <p class="project-category">Strona internetowa</p>
+            </li>
+            <li class="project-card">
+              <img
+                src="images/project-2.jpg"
+                alt="two players are playing basketball"
+                width="370"
+                height="294"
+              />
+              <h5 class="project-title">Grafika New Orlean vs Golden Star</h5>
+              <p class="project-category">Dizajn</p>
+            </li>
+            <li class="project-card">
+              <img
+                src="images/project-3.jpg"
+                alt="logo of seafood restaurant"
+                width="370"
+                height="294"
+              />
+              <h5 class="project-title">Restauracja Seafood</h5>
+              <p class="project-category">Aplikacja</p>
+            </li>
+            <li class="project-card">
+              <img
+                src="images/project-4.jpg"
+                alt="headphones"
+                width="370"
+                height="294"
+              />
+              <h5 class="project-title">Project Prime</h5>
+              <p class="project-category">Marketing</p>
+            </li>
+            <li class="project-card">
+              <img
+                src="images/project-5.jpg"
+                alt="boxes"
+                width="370"
+                height="294"
+              />
+              <h5 class="project-title">Projekt Boxes</h5>
+              <p class="project-category">Aplikacja</p>
+            </li>
+            <li class="project-card">
+              <img
+                src="images/project-6.jpg"
+                alt="computer monitor with project"
+                width="370"
+                height="294"
+              />
+              <h5 class="project-title">Inspiration has no Borders</h5>
+              <p class="project-category">Strona internetowa</p>
+            </li>
+            <li class="project-card">
+              <img
+                src="images/project-7.jpg"
+                alt="magazine"
+                width="370"
+                height="294"
+              />
+              <h5 class="project-title">Magazyn Limited Edition</h5>
+              <p class="project-category">Dizajn</p>
+            </li>
+            <li class="project-card">
+              <img
+                src="images/project-8.jpg"
+                alt="logo of project lab"
+                width="370"
+                height="294"
+              />
+              <h5 class="project-title">Projekt LAB</h5>
+              <p class="project-category">Marketing</p>
+            </li>
+            <li class="project-card">
+              <img
+                src="images/project-9.jpg"
+                alt="laptop with project of application opened"
+                width="370"
+                height="294"
+              />
+              <h5 class="project-title">Growing Business</h5>
+              <p class="project-category">Aplikacja</p>
+            </li>
+          </ul>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="container footer-container">
+          <div class="footer-info">
+            <a href="./index.html"
+              ><img
+                src="./images/logo.png"
+                alt="logo"
+                style="width: 300px; height: 70px"
+            /></a>
+            <address class="contact-footer">
+              Poznań, ul. gen. Stanisława Maczka 16/8
+            </address>
+            <ul class="link-list-footer">
+              <li>
+                <a class="link-info-footer" href="mailto:infor@example.com"
+                  >info@budrom.pl</a
+                >
+              </li>
+              <li>
+                <a class="link-info-footer" href="tel:+48111111111"
+                  >+48 111 111 111</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="join-us-header">Dołącz do nas</h4>
+            <ul class="footer-social-media-icons">
+              <li>
+                <svg class="footer-social-media-icon">
+                  <use
+                    xlink:href="./images/icons.svg#instagram-footer"
+                    width="20"
+                    height="20"
+                    x="12"
+                    y="12"
+                  ></use>
+                </svg>
+              </li>
+              <li>
+                <svg class="footer-social-media-icon">
+                  <use
+                    xlink:href="./images/icons.svg#twitter-footer"
+                    width="20"
+                    height="20"
+                    x="12"
+                    y="12"
+                  ></use>
+                </svg>
+              </li>
+              <li>
+                <svg class="footer-social-media-icon">
+                  <use
+                    xlink:href="./images/icons.svg#facebook-footer"
+                    width="20"
+                    height="20"
+                    x="12"
+                    y="12"
+                  ></use>
+                </svg>
+              </li>
+              <li>
+                <svg class="footer-social-media-icon">
+                  <use
+                    xlink:href="./images/icons.svg#linkedin-footer"
+                    width="20"
+                    height="20"
+                    x="12"
+                    y="12"
+                  ></use>
+                </svg>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
